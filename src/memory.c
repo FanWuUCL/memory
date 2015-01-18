@@ -17,7 +17,7 @@
 #define TIMEOUT 1
 #endif
 
-#define STD_EVALUATION_TIMES 30
+#define STD_EVALUATION_TIMES 1
 
 GList* testcases;
 
@@ -446,7 +446,7 @@ void main(int argc, char** argv){
 	}
 
 	randomUtility=g_rand_new();
-	logfp=fopen("population/memoryLog.txt", "w+");
+	logfp=fopen("memoryLog.txt", "w+");
 	readTestcases();
 fprintf(logfp, "timeout_sec=%lf\n", timeout_sec);
 fflush(logfp);
