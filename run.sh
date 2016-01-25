@@ -31,4 +31,8 @@ make
 cp memory ../memory
 cd ..
 
-./memory
+if [ -z $2 ]; then
+	./memory
+else
+	./memory $2
+fi
